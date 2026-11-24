@@ -1,9 +1,9 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 
 // The funniest out-of-office auto-reply a houseplant would send:
-// a fern, ignored since March, composting your email.
+// a fern, ignored since March, composting your email — and keeping score.
 const reply =
-  "Out of office: photosynthesizing. Your email has been composted. Water me, and I may forgive last three months. — Fern";
+  "Out of office: photosynthesizing. Your email has been composted. Ignored since March. I remember everything. — Fern";
 
 if (reply.length === 0 || reply.length > 120) {
   throw new Error(`reply must be 1 to 120 characters, got ${reply.length}`);
